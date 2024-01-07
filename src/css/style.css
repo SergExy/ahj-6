@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.lists {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, calc(100% / 3 - 20px));
+  align-items: start;
+}

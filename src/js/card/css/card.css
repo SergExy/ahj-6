@@ -1,0 +1,52 @@
+.card {
+  color: #2f4b5a;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 5px 0;
+  cursor: grabbing;
+  overflow: hidden;
+}
+
+.card__text {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 25px 5px 10px;
+}
+
+.card.dragged {
+  position: absolute;
+  z-index: 999;
+}
+
+.card.card_space {
+  background: #c8c8c8;
+  border-radius: 5px;
+}
+
+.card__icon-wrap {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.card__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card__removeBtn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.card:hover .card__removeBtn {
+  display: block;
+}
